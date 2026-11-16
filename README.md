@@ -94,3 +94,15 @@ flowchart TD
 ```
 
 *Simplified conceptual architecture. Some integrations also use Lambda Function URLs.*
+
+
+## Project Screenshots
+
+### Screenshot 1
+![Project Screenshot 1](Screenshot%202026-08-05%20at%2012.41.06.png)
+
+### Screenshot 2
+![Project Screenshot 2](Screenshot%202026-08-11%20at%2020.24.00.png)
+
+### Screenshot 3
+![Project Screenshot 3](Screenshot%202026-08-11%20at%2020.32.05.png)
