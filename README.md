@@ -98,11 +98,20 @@ flowchart TD
 
 ## Project Screenshots
 
-### Screenshot 1
-![Project Screenshot 1](Screenshot%202026-08-05%20at%2012.41.06.png)
+### 1. CDW MarketShop Homepage
+The marketplace frontend provides an interface
+for browsing, buying, and selling products.
 
-### Screenshot 2
-![Project Screenshot 2](Screenshot%202026-08-11%20at%2020.24.00.png)
+![CDW MarketShop Homepage](Screenshot%202026-08-05%20at%2012.41.06.png)
 
-### Screenshot 3
-![Project Screenshot 3](Screenshot%202026-08-11%20at%2020.32.05.png)
+### 2. Seller Dashboard
+A seller management interface for viewing
+listings, orders, messages, reviews, and revenue.
+
+![Seller Dashboard](Screenshot%202026-08-11%20at%2020.24.00.png)
+
+### 3. Product Upload Interface
+Product listing form supporting multiple
+product images and item details.
+
+![Product Upload](Screenshot%202026-08-11%20at%2020.32.05.png)
