@@ -66,3 +66,31 @@ Infrastructure managed using Terraform.
 This repository contains project documentation and architecture summaries.
 
 Production credentials, private configuration, and the original application's Git history are not included.
+
+## AWS Architecture Diagram
+
+```mermaid
+flowchart TD
+    A[React Native / Expo Frontend]
+    B[Amazon Cognito]
+    C[Amazon API Gateway]
+    D[AWS Lambda Functions]
+    E[Amazon S3]
+    F[Amazon DynamoDB]
+    G[Stripe Checkout and Webhooks]
+    H[Terraform Infrastructure]
+
+    A --> B
+    A --> C
+    C --> D
+    D --> E
+    D --> F
+    A --> G
+    G --> D
+    H -.-> C
+    H -.-> D
+    H -.-> E
+    H -.-> F
+```
+
+*Simplified conceptual architecture. Some integrations also use Lambda Function URLs.*
