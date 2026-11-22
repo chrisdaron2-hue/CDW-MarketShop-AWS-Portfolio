@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CDW MarketShop | AWS Cloud Portfolio</title>
+  <style>
+    :root {
+      --bg: #081426;
+      --card: #12243b;
+      --text: #f2f6ff;
+      --muted: #b7c8dc;
+      --accent: #ffbf47;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #102c50, #081426);
+    }
+    h1 { font-size: clamp(32px, 5vw, 52px); margin: 0; }
+    h2 { color: var(--accent); }
+    h3 { margin-top: 0; }
+    p { color: var(--muted); }
+    .subtitle { font-size: 19px; }
+    .container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid #29415e;
+    }
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: #081426;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 8px;
+    }
+    .secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--muted);
+    }
+    .diagram {
+      background: #0d1c30;
+      padding: 25px;
+      border-radius: 12px;
+      overflow-x: auto;
+      text-align: center;
+    }
+    .node {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #1b416b;
+      border: 1px solid #648ab4;
+      border-radius: 8px;
+      margin: 6px;
+    }
+    .arrow { color: var(--accent); font-size: 24px; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #29415e;
+      color: var(--muted);
+    }
+    a { color: var(--accent); }
+    a.button { color: #081426; }
+    a.secondary { color: var(--text); }
+  </style>
+</head>
+<body>
+
+
+<header>
+  <h1>CDW MarketShop</h1>
+  <p class="subtitle">AWS Cloud Engineering & Serverless Portfolio</p>
+  <p>
+    Building cloud-integrated applications with AWS,
+    Terraform, REST APIs, and modern web technologies.
+  </p>
+  <a class="button"
+     href="https://github.com/chrisdaron2-hue/CDW-MarketShop-AWS-Portfolio"
+     target="_blank" rel="noopener noreferrer">
+    View GitHub Portfolio
+  </a>
+  <a class="button secondary"
+     href="https://cdw-marketshop.vercel.app"
+     target="_blank" rel="noopener noreferrer">
+    View Live Marketplace
+  </a>
+</header>
+
+
+<main>
+  <section class="container">
+    <h2>Project Overview</h2>
+    <p>
+      CDW MarketShop is a cloud-integrated marketplace
+      application developed with React Native, Expo,
+      AWS serverless technologies, and Stripe.
+    </p>
+    <p>
+      This portfolio highlights the cloud architecture,
+      API integrations, infrastructure configuration,
+      and engineering challenges addressed during development.
+    </p>
+  </section>
+
+
+  <section class="container">
+    <h2>AWS Cloud Technologies</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AWS Lambda</h3>
+        <p>Serverless backend functions for application operations.</p>
+      </div>
+      <div class="card">
+        <h3>Amazon API Gateway</h3>
+        <p>HTTP API integration between frontend and backend services.</p>
+      </div>
+      <div class="card">
+        <h3>Amazon S3</h3>
+        <p>Product image upload and retrieval workflows.</p>
+      </div>
+      <div class="card">
+        <h3>Amazon Cognito</h3>
+        <p>User authentication and account management.</p>
+      </div>
+      <div class="card">
+        <h3>Amazon DynamoDB</h3>
+        <p>Cloud-based application data storage.</p>
+      </div>
+      <div class="card">
+        <h3>Terraform</h3>
+        <p>Infrastructure configuration using Infrastructure as Code.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container">
+    <h2>Cloud Architecture</h2>
+    <p>Simplified conceptual view of the application architecture.</p>
+    <div class="diagram">
+      <div class="node">React Native / Expo</div>
+      <div class="arrow">↓</div>
+      <div>
+        <span class="node">Amazon Cognito</span>
+        <span class="node">Amazon API Gateway</span>
+        <span class="node">Stripe Checkout</span>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="node">AWS Lambda</div>
+      <div class="arrow">↓</div>
+      <div>
+        <span class="node">Amazon S3</span>
+        <span class="node">Amazon DynamoDB</span>
+      </div>
+      <p>
+        Infrastructure configured using Terraform.
+        Some integrations also use Lambda Function URLs.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="container">
+    <h2>Engineering Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Serverless Development</h3>
+        <p>Developed AWS Lambda backend functionality.</p>
+      </div>
+      <div class="card">
+        <h3>API Integration</h3>
+        <p>Connected frontend components to REST APIs.</p>
+      </div>
+      <div class="card">
+        <h3>Payment Integration</h3>
+        <p>Integrated Stripe Checkout and webhooks for order management.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Troubleshooting</h3>
+        <p>
+          Investigated authentication, CORS, API connectivity,
+          and deployment issues.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container">
+    <h2>Development Tools</h2>
+    <p>
+      JavaScript · Node.js · React Native · Expo ·
+      REST APIs · Git · GitHub · Vercel · Terraform
+    </p>
+  </section>
+
+
+  <section class="container">
+    <h2>Explore the Project</h2>
+    <p>
+      Review the documentation, AWS architecture,
+      and live marketplace application.
+    </p>
+    <a class="button"
+       href="https://github.com/chrisdaron2-hue/CDW-MarketShop-AWS-Portfolio"
+       target="_blank" rel="noopener noreferrer">
+      GitHub Repository
+    </a>
+    <a class="button secondary"
+       href="https://cdw-marketshop.vercel.app"
+       target="_blank" rel="noopener noreferrer">
+      Live Application
+    </a>
+  </section>
+</main>
+
+
+<footer>
+  CDW MarketShop | AWS Cloud Engineering Portfolio
+</footer>
+
+
+</body>
+</html>
